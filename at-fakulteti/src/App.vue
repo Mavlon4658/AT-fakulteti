@@ -7,14 +7,21 @@
       <v-sheet
         color="grey lighten-4"
         class="pa-4"
+        align="center"
+        justify="center"
       >
         <v-avatar
           class="mb-4"
           color="grey darken-1"
-          size="64"
-        ></v-avatar>
+          size="100"
+          justify-center
+        >
+          <img src="images/AT-logo.jpg" alt="">
+        </v-avatar>
 
-        <div>john@vuetifyjs.com</div>
+        <div>
+          <b>Axborot Texnologiyalari fakulteti</b>
+        </div>
       </v-sheet>
       <v-card
         class="mx-auto"
@@ -43,7 +50,7 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Amaliy matematika va informatika</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -90,3 +97,10 @@ export default {
     }),
 };
 </script>
+
+<style scoped>
+img{
+  object-fit: cover;
+  transform: scale(1.3)
+}
+</style>
